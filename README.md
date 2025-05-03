@@ -2,20 +2,21 @@
 
 This project explores how to structure creative workflows without using a TabBar, delivering a fluid, uninterrupted navigation experience. Inspired by tools like Procreate, it showcases how multiple content flows can coexist on a single screen through custom modal transitions and native UIKit components.
 
-The current implementation (Model 4) includes a scrollable preview gallery using `UIPageViewController`, where users can navigate between projects and return to the canvas without breaking context.
+The current implementation includes a scrollable preview gallery using `UIPageViewController`, where users can navigate between projects and return to the canvas without breaking context.
 
 ---
 
 ## Project Structure
 
 TablessNavigation/
-├── AppDelegate.swift
-├── SceneDelegate.swift
-├── ProjectsViewController.swift // Main project grid UI
-├── ProjectCell.swift // Custom UICollectionViewCell
-├── CanvasViewController.swift // Blank drawing canvas (placeholder)
-├── GalleryViewController.swift // Horizontal scrollable gallery
-└── Assets.xcassets/ // Image thumbnails for each project
+├── AppDelegate.swift            // App launch and scene lifecycle setup
+├── SceneDelegate.swift          // Window and root view controller configuration
+├── ProjectsViewController.swift // Main grid view with project thumbnails and add button
+├── ProjectCell.swift            // Custom UICollectionViewCell for displaying project previews
+├── CanvasViewController.swift   // Placeholder for drawing canvas with pan-based stroke preview
+├── GalleryViewController.swift  // Modal gallery with horizontal scroll using UIPageViewController
+├── Assets.xcassets              // Image assets: thumbA, thumbB, thumbC
+└── Info.plist                   // App configuration and launch settings
 
 ---
 
@@ -46,7 +47,7 @@ All transitions are modal-based, maintaining the feeling of a single continuous 
 ## Technologies Used
 
 - **Language:** Swift
-- **UI Framework:** UIKit (no SwiftUI)
+- **UI Framework:** UIKit
 - **Navigation:** UIPageViewController, UIViewController transitions
 - **UI Components:** UICollectionView, UIButton, UIImageView
 - **Effects:** UIVisualEffectView (dark blur), Alpha layers
