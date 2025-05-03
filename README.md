@@ -8,15 +8,14 @@ The current implementation includes a scrollable preview gallery using `UIPageVi
 
 ## Project Structure
 
-TablessNavigation/
-├── AppDelegate.swift            // App launch and scene lifecycle setup
-├── SceneDelegate.swift          // Window and root view controller configuration
-├── ProjectsViewController.swift // Main grid view with project thumbnails and add button
-├── ProjectCell.swift            // Custom UICollectionViewCell for displaying project previews
-├── CanvasViewController.swift   // Placeholder for drawing canvas with pan-based stroke preview
-├── GalleryViewController.swift  // Modal gallery with horizontal scroll using UIPageViewController
-├── Assets.xcassets              // Image assets: thumbA, thumbB, thumbC
-└── Info.plist                   // App configuration and launch settings
+1. AppDelegate.swift            // App launch and scene lifecycle setup.
+2. SceneDelegate.swift          // Window and root view controller configuration.
+3. ProjectsViewController.swift // Main grid view with project thumbnails and add button.
+4. ProjectCell.swift            // Custom UICollectionViewCell for displaying project previews.
+5. CanvasViewController.swift   // Placeholder for drawing canvas with pan-based stroke preview.
+6. GalleryViewController.swift  // Modal gallery with horizontal scroll using UIPageViewController.
+7. Assets.xcassets              // Image assets: thumbA, thumbB, thumbC.
+8. Info.plist                   // App configuration and launch settings.
 
 ---
 
